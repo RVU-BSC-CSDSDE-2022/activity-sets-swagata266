@@ -1,5 +1,5 @@
-4. Write a C program to add two numbers using **pass by reference**
-  #include<stdio.h>
+//4. Write a C program to add two numbers using **pass by reference**
+#include<stdio.h>
 int main(void)
 {
   int a,b,sum;
