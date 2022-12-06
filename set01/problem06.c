@@ -1,35 +1,39 @@
-//6. Write a C program to compare three numbers using **pass by reference**
-#include<stdio.h>
-int main(void)
-{
-  int a,b,c,result;
-  printf("Enter the first number\n");
-  scanf("%d",&a);
-  printf("Enter the second number\n");
-  scanf("%d",&b);
-  printf("Enter the third number\n");
-  scanf("%d",&c);
-  result=comp_func(&a,&b,&c);
-  printf("The greatest of the 3 numbers is %d",result);
-  return(0);
-}
-comp_func(int *a,int *b,int *c)
-{
-  int temp;
-  if((*a>*b)&(*a>*c))
-  {
-    temp=*a;
-  }
-  else if((*b>*a)&(*b>*c))
-  {
-    temp=*b;
-  }
-  else
-  {
-    temp=*c;
-  }
+#include <stdio.h>
 
-return temp;
+int input();
+void compare(int a, int b, int c, int *largest);
+void output(int a, int b, int c, int largest);
+
+int main()
+{
+  int a,b,c,largest;
+  a=input();
+  b=input();
+  c=input();
+  compare(a,b,c, &largest);
+  output(a,b,c,largest);
 }
 
+int input()
+{
+  int n;
+  printf("Enter the value\n");
+  scanf("%d", &n);
+  return n;
+}
 
+void compare(int a, int b, int c, int *largest)
+{
+   if((a>b)&&(a>c))
+    *largest=a;
+  if((b>a)&&(b>c))
+    *largest=b;
+  if((c>a)&&(c>b))
+    *largest=c;
+}
+
+void output(int a, int b, int c, int largest)
+{
+  printf("the largest of %d %d %d is %d", a,b,c,largest);
+  
+}
