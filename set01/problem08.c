@@ -1,36 +1,55 @@
-//8. Write a C program to find sum of _n_ different numbers entered by the user.
-#include<stdio.h>
-int main(void)
+#include <stdio.h>
+
+int input_array_size();
+void input_array(int n, int a[n]);
+int sum_n_array(int n, int a[n]);
+void output(int n, int a[n], int sum);
+
+
+int input_array_size()
 {
-  int n,i,sum=0;
-  int a[n];
+  int n;
   printf("Enter the size of the array\n");
-  scanf("%d",&n);
-  printf("Enter the numbers\n");
-  for (int i=0;i<n;i++)
-    {
-    scanf("%d",&a[n]);
-    sum=sum+a[n];
-    }
-printf("The sum of the numbers is %d",sum);
+  scanf("%d", &n);
+  return n;
 }
 
-// #include <stdio.h>
-// int main()
-// {
-//    int n, sum = 0, c, array[100];
-//   printf("Enter the size of the array\n");
+void input_array(int n, int a[n])
+{
+  for(int i=0; i<n;i++)
+    {
+      printf("Enter the numbers\n");
+      scanf("%d", &a[i]);
+      
+    }
+}
 
-//    scanf("%d", &n);
-//   printf("Enter the numbers\n");
+int sum_n_array(int n, int a[n])
+{
+  int sum=0;
+  for(int i=0; i<n; i++)
+    {
+      sum=sum+a[i];
+    }
+  return sum;
+}
+void output(int n, int a[n], int sum)
+{
+  printf("The sum of ");
+  for(int i=0;i<n;i++)
+    {
+      printf("%d ", a[i]);
+    }
+  printf("is %d", sum);
+}
 
-//    for (c = 0; c < n; c++)
-//    {
-//       scanf("%d", &array[c]);
-//       sum = sum + array[c];
-//    }
-
-//    printf("Sum = %d\n", sum);
-
-//    return 0;
-// }
+int main()
+{
+  int n, sum=0;
+  n=input_array_size();
+  int a[n];
+  input_array(n, a);
+  sum=sum_n_array(n, a);
+  output(n, a,sum);
+  return 0;
+}
