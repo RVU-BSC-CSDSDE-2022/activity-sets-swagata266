@@ -33,5 +33,5 @@ int main() {
   int n = input_number();
   int result = is_composite(n);
   output(n, result);
-  return 0;
+  return
 }
