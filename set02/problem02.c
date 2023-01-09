@@ -30,5 +30,5 @@ int main() {
   int c = input_side();
   int isscalene = check_scalene(a, b, c);
   output(a, b, c, isscalene);
-  return 0;
+  return
 }
