@@ -3,5 +3,5 @@
 
 int main() {
   printf("my name is swagata singha roy");
-  
+  return 0;
 }
