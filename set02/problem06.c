@@ -25,5 +25,5 @@ int main() {
 	input_string(a);
 	str_reverse(a, reverse_a);
 	output(a, reverse_a); 
-	return 
+	return 0;
 }
