@@ -47,5 +47,5 @@ int main() {
   input_array(n, a);
   int sum = sum_composite_numbers(n, a);
   output(sum);
-  return 
+  return 0;
 }
