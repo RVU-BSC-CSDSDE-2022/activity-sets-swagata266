@@ -33,5 +33,5 @@ int main() {
     input(&f1, &f2, &f3);
     min = find_smallest(f1, f2, f3);
     output(min);
-    return 0;
+    
 }
