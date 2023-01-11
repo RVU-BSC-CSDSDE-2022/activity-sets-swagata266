@@ -41,5 +41,5 @@ int main() {
     input_string(string, substring);
     int index = sub_str_index(string, substring);
     output(string, substring, index);
-    return 0;
+    
 }
