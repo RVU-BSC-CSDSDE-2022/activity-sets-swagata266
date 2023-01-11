@@ -33,5 +33,4 @@ int main() {
   input(name);
   int res = has_nice_name(name);
   output(res);
-  return 0;
 }
