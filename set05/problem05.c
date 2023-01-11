@@ -28,5 +28,4 @@ int main() {
     int x = input();
     float result = borga_X(x);
     output(x, result);
-    return 0;
 }

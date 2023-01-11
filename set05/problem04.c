@@ -35,5 +35,4 @@ int main() {
     input_camel_details(&radius, &height, &length);
     int mood = find_mood(radius, height, length);
     output(radius, height, length, mood);
-    
 }
