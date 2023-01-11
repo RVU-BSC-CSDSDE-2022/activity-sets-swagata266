@@ -1,4 +1,4 @@
-//12.Write a C program to add two numbers using pass by reference.
+//4.Write a C program to add two numbers using pass by reference.
 
 #include <stdio.h>
 
