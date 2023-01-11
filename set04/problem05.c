@@ -36,5 +36,5 @@ int main() {
     input_array(n, a);
     index = find_largest_index(n, a);
     output(index);
-    return 0;
+    
 }
