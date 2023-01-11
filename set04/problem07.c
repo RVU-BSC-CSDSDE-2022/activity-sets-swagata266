@@ -39,5 +39,5 @@ int main() {
     f2 = input_fraction();
     sum = add_fractions(f1, f2);
     output(f1, f2, sum);
-    return 0;
+    
 }
