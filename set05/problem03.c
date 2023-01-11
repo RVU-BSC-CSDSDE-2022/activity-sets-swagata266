@@ -31,5 +31,5 @@ int main() {
     //find_weight(&c);
     c.weight = find_weight(c);
     output(c);
-    return 0;
+  
 }
