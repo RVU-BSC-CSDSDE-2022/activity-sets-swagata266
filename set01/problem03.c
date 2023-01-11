@@ -36,4 +36,4 @@ int add(int a, int b)
 void output(int a, int b, int sum)
 {
     printf("%d + %d = %d\n", a, b, sum);
-}
+
