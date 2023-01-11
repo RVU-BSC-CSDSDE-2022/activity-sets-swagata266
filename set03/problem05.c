@@ -42,5 +42,5 @@ int main() {
     init_array(n, a);
     eratosthenes_sieve(n, a);
     output(n, a);
-    return 0;
+    
 }
