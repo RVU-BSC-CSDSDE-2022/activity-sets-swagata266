@@ -27,6 +27,6 @@ int main() {
 	Triangle t = input_triangle(); 
 	find_area(&t); of the triangle
 	output(t); 
-	
+	return 0;
 }
 
