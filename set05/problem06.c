@@ -43,5 +43,5 @@ int main() {
     input(n, a);
     float avg = odd_average(n, a);
     output(avg);
-    
+    return 0;
 }
