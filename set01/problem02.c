@@ -8,5 +8,5 @@ int main()
 	scanf("%d%d", &A, &B);
 	sum = A + B;
 	printf("Sum of A and B is: %d", sum);
-	
+	return 0;
 }
