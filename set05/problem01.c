@@ -31,5 +31,4 @@ int main() {
     b = input();
     dist(a, b, &res);
     output(a, b, res);
-    
 }
