@@ -27,6 +27,6 @@ int main() {
     input_string(string);
     no_words = count_words(string);
     output(string, no_words);
-    
+    return 0;
 }
 
