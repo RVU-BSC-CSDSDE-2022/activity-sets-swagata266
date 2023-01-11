@@ -50,5 +50,5 @@ int main() {
     x = input_x();
     result = evaluate_polynomial(n, a, x);
     output(n, a, x, result);
-    
+    return 0;
 }
