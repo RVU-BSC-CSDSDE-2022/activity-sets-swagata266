@@ -22,5 +22,5 @@ int main() {
     input_camel_details(&radius, &height, &length);
     weight = find_weight(radius, height, length);
     output(radius, height, length, weight);
-    return 0;
+    
 }
