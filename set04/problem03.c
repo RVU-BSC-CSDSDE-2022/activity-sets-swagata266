@@ -26,5 +26,5 @@ int main() {
     input_n_and_r(&n, &r);
     result = nCr(n, r);
     output(n, r, result);
-  
+    return 0;
 }
