@@ -29,5 +29,5 @@ int main() {
     int n = input_number();
     bool result = is_prime(n);
     output(n, result);
-    return 0;
+    
 }
